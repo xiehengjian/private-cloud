@@ -5,10 +5,9 @@ if type "docker" >/dev/null 2>&1;then
     exit
 fi
 curl -sSL https://get.daocloud.io/docker | sh
-curl -fsSL https://get.docker.com/rootless | sh
 
 
 groupadd docker
-gpasswd -a heng docker 
-newgrp docker 
+sudo gpasswd -a heng docker 
+sudo newgrp docker 
 

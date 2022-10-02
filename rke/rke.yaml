@@ -1,6 +1,6 @@
 nodes:
   - address: 127.0.0.1
-    user: rke
+    user: heng
     role: [controlplane, worker, etcd]
 
 services:
