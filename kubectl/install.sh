@@ -1,4 +1,10 @@
 echo "开始安装kubectl"
+
+if type "kubectl" >/dev/null 2>&1;then
+    echo "kubectl 已安装"
+    exit
+fi
+
 ping -c 1 "google.com"
 if [ $? -eq 0 ]; then
     echo "使用国际网络"
