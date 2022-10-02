@@ -6,6 +6,7 @@ if type "docker" >/dev/null 2>&1;then
 fi
 curl -sSL https://get.daocloud.io/docker | sh
 
+service sshd start
 
 groupadd docker
 sudo gpasswd -a heng docker 

@@ -11,5 +11,6 @@ fi
 
 if ! type "sshd" >/dev/null 2>&1;then
     sudo apt install openssh-server -y
+    service sshd start
 fi
 
