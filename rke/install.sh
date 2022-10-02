@@ -19,7 +19,7 @@ fi
 ssh-keygen
 ssh-copy-id heng@127.0.0.1
 
-rke up --config rke.yaml
+rke up 
 
 if [ ! -d "~/.kube" ]; then
 mkdir ~/.kube
