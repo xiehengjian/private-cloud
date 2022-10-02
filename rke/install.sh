@@ -11,4 +11,9 @@ fi
 
 
 rke up --config rke.yaml
-mkdir ~/.kube && mv kube_config_rke.yaml ~/.kube/config
+
+if [ ! -d "~/.kube" ]; then
+mkdir ~/.kube
+fi
+
+mv kube_config_rke.yaml ~/.kube/config
