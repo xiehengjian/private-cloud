@@ -1,0 +1,16 @@
+nodes:
+  - address: 127.0.0.1
+    user: rke
+    role: [controlplane, worker, etcd]
+
+services:
+  etcd:
+    snapshot: true
+    creation: 6h
+    retention: 24h
+
+ingress:
+  provider: nginx
+  options:
+    use-forwarded-headers: “true”
+ded-headers: “true”
