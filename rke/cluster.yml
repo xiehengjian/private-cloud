@@ -2,7 +2,7 @@ network:
   plugin: canal
 nodes:
   - address: 127.0.0.1
-    user: mcloud
+    user: heng
     role:
       - controlplane
       - etcd
