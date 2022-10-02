@@ -12,5 +12,5 @@ services:
 ingress:
   provider: nginx
   options:
-    use-forwarded-headers: “true”
-ded-headers: “true”
+    use-forwarded-headers: "true"
+ded-headers: "true"
