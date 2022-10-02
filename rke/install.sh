@@ -16,6 +16,8 @@ else
 	curl -fL "https://kinshy-generic.pkg.coding.net/south/study/rke?version=latest" -o rke && sudo chmod +x rke && ./rke --version && sudo cp rke /usr/bin/
 fi
 
+ssh-keygen
+ssh-copy-id heng@127.0.0.1
 
 rke up --config rke.yaml
 
