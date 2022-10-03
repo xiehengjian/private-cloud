@@ -17,3 +17,6 @@ ingress:
   options:
     use-forwarded-headers: "true"
 ded-headers: "true"
+
+
+addon_job_timeout: 180
