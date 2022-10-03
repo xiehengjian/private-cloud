@@ -11,6 +11,6 @@ else
     export region="cn"
 fi
 
-cd docker && sh install.sh && cd ..
-cd  kubectl && sh install.sh && cd ..
-cd rke && sh install.sh && cd ..
+cd docker && bash install.sh && cd ..
+cd  kubectl && bash install.sh && cd ..
+cd rke && bash install.sh && cd ..
