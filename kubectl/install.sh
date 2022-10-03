@@ -1,7 +1,5 @@
 echo "开始安装kubectl"
 
-z
-
 ping -c 1 "google.com"
 if [ $? -eq 0 ]; then
     echo "使用国际网络"
